@@ -1,0 +1,58 @@
+Database Raw Query
+
+CRUD => Create | Read(Get all) | Update | Delete
+
+CREATE (insert into value)
+------
+INSERT INTO table_name (column1, column2) VALUES (...,...);
+
+READ (Select * From Where)
+-----
+SELECT * FROM table_name;
+
+UPDATE (update set where)
+-------
+UPDATE table_name SET column1="value1",... WHERE condition;
+
+DELETE (delete from where)
+-------
+DELETE FROM table_name WHERE condition;
+
+SQL condition
+
+Operator =, !=, >, <, >=, <=
+
+AND         WHERE condition1 AND condition2
+
+OR          WHERE condition1 OR condition2
+
+BETWEEN     WHERE column_name BETWEEN value1 AND value2
+
+IN          WHERE column_name IN('yangon', 'mandalay')
+
+NOT IN      WHERE column_name NOT IN('yangon', 'mandalay')
+
+GROUP BY
+
+COUNT
+
+AS
+
+laravel NOTE
+
+composer create-project laravel/laravel example-app
+
+php artisan serve
+
+php artisan make:controller ExampleName
+
+php artisan make:model example-name
+
+php artisan migrate
+php artisan migrate:status
+php artisan make:migration create_exampleNames_table
+php artisan migrate:rollback
+php artisan migrate:fresh = php artisan migrate:refresh
+php artisan make:model exampleName -mc
+
+Databse Store (CRUD) => Model + Table + Database
